@@ -1,14 +1,15 @@
 package com.company;
 
 public class Worker extends Person{
-    public int gaji;
+    private int gaji;
 
-    public Worker(String nama, int umur, int gaji){
-        super(nama,umur);
+    public Worker(String nama, int umur, int NIK, int gaji){
+        super(nama,umur,NIK);
         this.gaji = gaji;
     }
 
-    public String toString(){
-        return String.format(super.toString() + "\nGaji : " + gaji);
+    public void hasil(){
+        super.hasil();
+        System.out.println("Gaji\t: " + gaji);
     }
 }
