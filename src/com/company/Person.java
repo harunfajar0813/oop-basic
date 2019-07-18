@@ -22,4 +22,6 @@ public abstract class Person {
     public int getNIK() {
         return NIK;
     }
+
+    public abstract String jenisPersona();
 }
