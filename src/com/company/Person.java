@@ -11,7 +11,15 @@ public abstract class Person {
         this.NIK = NIK;
     }
 
-    public void hasil(){
-        System.out.println("Nama\t: " + nama + "\nUmur\t: " + umur + "\nNIK\t\t: " + NIK);
+    public String getNama() {
+        return nama;
+    }
+
+    public int getUmur() {
+        return umur;
+    }
+
+    public int getNIK() {
+        return NIK;
     }
 }

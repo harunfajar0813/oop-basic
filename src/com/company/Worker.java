@@ -8,8 +8,11 @@ public class Worker extends Person{
         this.gaji = gaji;
     }
 
-    public void hasil(){
-        super.hasil();
-        System.out.println("Gaji\t: " + gaji);
+    public int getGaji() {
+        return gaji;
+    }
+
+    public String toString(){
+        return String.format("Nama : " + super.getNama() + "\nUmur : " + super.getUmur() + "\nNIK : " + super.getNIK() + "\nGaji : " +  getGaji());
     }
 }
